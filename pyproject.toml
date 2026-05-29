@@ -1,0 +1,19 @@
+[project]
+name = "fingerbot-libusb"
+version = "0.1.0"
+description = "Raw libusb control for the GL.iNet GL-FGB-01 Fingerbot USB dongle"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pyusb>=1.3.1",
+]
+
+[project.scripts]
+fingerbot-libusb = "fingerbot_libusb:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+py-modules = ["fingerbot_libusb"]

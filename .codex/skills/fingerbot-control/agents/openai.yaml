@@ -1,0 +1,4 @@
+interface:
+  display_name: "Fingerbot Control"
+  short_description: "Drive the GL-FGB-01 Fingerbot safely"
+  default_prompt: "Use $fingerbot-control to press or hold the target laptop power button with the GL-FGB-01 Fingerbot."
